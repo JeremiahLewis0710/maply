@@ -10,15 +10,23 @@ $(function () {
             console.log(data)
             var latitude = data.results[0].geometry.location.lat;
             var longitude = data.results[0].geometry.location.lng;
+            var div = ("<div id = 'map'></div>");
+            div.append(map)
+            $(".row").append(div);
 
 
 
             var map;
-            var mapLocation = "http://maps.googleapis.com/maps/api/js?key=AIzaSyDx-Klsm0DJLWy3-kL-E94gnTekV_ffJUg";
-            $.ajax(mapLocation, { dataType: "jsonp" }).done(function (map) {
-                map = new google.maps.Map(document.getElementById('map'), {
+            var mapLocation = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDx-Klsm0DJLWy3-kL-E94gnTekV_ffJUg";
+            $.ajax(mapLocation, { dataType: "jsonp" }).done(function () {
+                map =  new google.maps.Map(document.getElementById('map'), {
                     center: { lat: latitude, lng: longitude },
                     zoom: 8
+
+                    
+                    
+                
+                
       
             
             
@@ -28,10 +36,10 @@ $(function () {
 
 
                     });
+               
             });
-
+    
         });
-
     });
 
 });
