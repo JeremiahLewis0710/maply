@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Maply</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Official Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+  <!-- Our project CSS -->
+  <link rel="stylesheet" href="maply.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          J's Map
+        </a>
+      </div>
+      <form class=navbar-form>
+        <div id=form-group>
+          <input class="form-control zip" type="text" placeholder="New Zip Code">
+          <button class="btn btn-default addzip" type="button"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+  <!--<div id="newzip">
+    <input id="zip" type="text" placeholder="New Zip Code">
+    <button id="addzip" type="button">Add</button>
+  </div>-->
+  <div class="container">
+    <div class="row">
+        <div class = ' col-sm-3' id ='map'></div>
+    </div>
+  </div>
+
+
+
+  </div>
+
+  <!-- Official JQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <!-- Official Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <!-- Our project JS -->
+  <script src="maps.js"></script>
+
+</body>
+
+</html>
